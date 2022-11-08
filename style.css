@@ -1,0 +1,94 @@
+body{
+    background-color: #E8E8E8;
+  
+}
+.TodoContainer{
+    width: 60rem;
+    margin: 7rem auto;
+}
+.input-section{
+    display: flex;
+}
+#todoInput{
+    width: 85%;
+    height: 2rem;
+    box-shadow: 2px 3px 3px 3px #B0B0B0; 
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
+    border: none;
+    outline: none;
+    margin-right: 15px;
+    font-size: 1rem;
+}
+#todoInput:hover{
+    border-bottom:3px solid#66cc94;
+    outline: none;
+}
+.btn--add{
+    align-self: center;
+    background-color: #66cc94;
+}
+.btn--edit,
+.btn--delete,
+.btn--add{
+    text-transform: capitalize;
+    font-size: .8rem;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    height: 2rem;
+    width: 6rem;
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px 1px #B0B0B0; 
+
+}
+.btn--edit{
+    margin-right: 7px;
+    background-color: #3c5ab4;
+
+}
+.btn--delete{
+    background-color:#ff0000;
+}
+#Post{
+    width: 98%;
+    padding: 1rem 1.2rem;
+    box-shadow: 2px 3px 3px 3px #B0B0B0; 
+    border-radius: 5px;
+    margin-top: 2rem;
+    background-color: #fff;
+   
+}
+.newInput--container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dotted #B0B0B0;
+    padding: .5rem;
+ 
+}
+/* MEDIA QUERY */
+@media (max-width:37.5em){
+    .TodoContainer{
+        width: 85vw;
+        
+    }
+    .input-section{
+        display: block;
+    }
+    #todoInput{
+        width: 90%;
+        margin-bottom: 15px;
+        padding: 1rem 1.2rem;
+        margin-right: 0;
+    }
+    .btn--add{
+        width: 85%;
+        margin-left: 1.5rem;
+     
+    }
+    #Post{
+        width: 90%;
+    }
+
+}
